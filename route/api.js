@@ -8,7 +8,7 @@ router.get('/', (req, res, next) => {
     res.send("user api access");
 })
 
-
+router.get('/getLotto/:date/:inputNumber', LottoApi);
 router.get('/getLotto/:date', LottoApi);
 router.get('/getLotto', LottoApi);
 
